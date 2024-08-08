@@ -88,7 +88,7 @@ const ProductForm = () => {
     };
 
     return (
-        <div className="container mx-auto mt-8 mb-8">
+        <div className="container m-8">
             <h1 className="text-2xl font-bold mb-4">Create Product</h1>
             <form onSubmit={handleSubmit} encType="multipart/form-data">
                 <div className="mb-4">
@@ -97,7 +97,7 @@ const ProductForm = () => {
                         type="number"
                         value={productID}
                         onChange={(e) => setProductID(e.target.value)}
-                        className="w-full px-3 py-2 shadow-md border rounded-lg"
+                        className="w-80 px-3 py-2 shadow-md border rounded-lg"
                         placeholder="Enter product ID"
                         required
                     />
@@ -108,7 +108,7 @@ const ProductForm = () => {
                         type="text"
                         value={productCode}
                         onChange={(e) => setProductCode(e.target.value)}
-                        className="w-full px-3 py-2 shadow-md border rounded-lg"
+                        className="w-80 px-3 py-2 shadow-md border rounded-lg"
                         placeholder="Enter product code"
                         required
                     />
@@ -119,7 +119,7 @@ const ProductForm = () => {
                         type="text"
                         value={productName}
                         onChange={(e) => setProductName(e.target.value)}
-                        className="w-full px-3 py-2 shadow-md border rounded-lg"
+                        className="w-80 px-3 py-2 shadow-md border rounded-lg"
                         placeholder="Enter product name"
                         required
                     />
@@ -135,7 +135,7 @@ const ProductForm = () => {
                         type="file"
                         accept="image/*"
                         onChange={handleImageUpload}
-                        className="block w-full border border-gray-200 shadow-md rounded-lg text-sm focus:z-10 disabled:opacity-50 disabled:pointer-events-non
+                        className="block w-80 border border-gray-200 shadow-md rounded-lg text-sm focus:z-10 disabled:opacity-50 disabled:pointer-events-non
                                 file:bg-gray-50 file:border-0
                                 file:me-4
                                 file:py-3 file:px-4"
@@ -149,7 +149,7 @@ const ProductForm = () => {
                         type="text"
                         value={hsnCode}
                         onChange={(e) => setHsnCode(e.target.value)}
-                        className="w-full px-3 py-2 shadow-md border rounded-lg"
+                        className="w-80 px-3 py-2 shadow-md border rounded-lg"
                         placeholder="Enter HSN code"
                         required
                     />
@@ -160,7 +160,7 @@ const ProductForm = () => {
                         type="number"
                         value={totalStock}
                         onChange={(e) => setTotalStock(e.target.value)}
-                        className="w-full px-3 py-2 shadow-md border rounded-lg"
+                        className="w-80 px-3 py-2 shadow-md border rounded-lg"
                         placeholder="Enter total stock"
                         required
                     />
@@ -173,7 +173,7 @@ const ProductForm = () => {
                                 type="text"
                                 value={variant.name}
                                 onChange={(e) => handleVariantChange(variantIndex, e.target.value)}
-                                className="w-full px-3 py-2 shadow-md border rounded-lg mb-2"
+                                className="w-80 px-3 py-2 shadow-md border rounded-lg mb-2"
                                 placeholder={`Variant ${variantIndex + 1} name`}
                                 required
                             />
@@ -183,7 +183,7 @@ const ProductForm = () => {
                                         type="text"
                                         value={subVariant}
                                         onChange={(e) => handleSubVariantChange(variantIndex, subVariantIndex, e.target.value)}
-                                        className="w-full px-3 py-2 shadow-md border rounded-lg mr-2"
+                                        className="w-80 px-3 py-2 shadow-md border rounded-lg mr-2"
                                         placeholder={`Subvariant ${subVariantIndex + 1} name`}
                                         required
                                     />
